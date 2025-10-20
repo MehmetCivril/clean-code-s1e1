@@ -7,16 +7,17 @@
   </head>
   <body class="page">
     <div class="info-banner">
-      <img class="info-banner__image" src="./eisenhower-matrix.jpg">
+      <img class="info-banner__image" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix diagram">
       <a class="info-banner__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </div>
     <div class="todo-app">
-      <p class="todo-app__add-section">
+      <section>
         <label class="todo-app__field-label" for="new-task">Add Item</label>
         <div class="todo-app__task-row">
           <input id="new-task" class="todo-app__task-input todo-app__task-input--new" type="text">
           <button class="todo-app__add-button">Add</button>
         </div>
+      </section>
       </p>
       <h3 class="todo-app__section-title">Todo</h3>
       <ul id="incomplete-tasks" class="todo-app__task-list todo-app__task-list--incomplete">
@@ -26,7 +27,7 @@
           <input type="text" class="todo-app__task-input">
           <button class="todo-app__action-button todo-app__action-button--edit">Edit</button>
           <button class="todo-app__action-button todo-app__action-button--delete">
-            <img class="todo-app__action-icon" src="./remove.svg">
+            <img class="todo-app__action-icon" src="./remove.svg" alt="Delete task">
           </button>
         </li>
         <li class="todo-app__task-item todo-app__task-item--editing">
@@ -35,7 +36,7 @@
           <input type="text" value="Go Shopping" class="todo-app__task-input">
           <button class="todo-app__action-button todo-app__action-button--edit">Save</button>
           <button class="todo-app__action-button todo-app__action-button--delete">
-            <img class="todo-app__action-icon" src="./remove.svg">
+            <img class="todo-app__action-icon" src="./remove.svg" alt="Delete task">
           </button>
         </li>
       </ul>
