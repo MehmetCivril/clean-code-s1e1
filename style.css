@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: lato, sans-serif;
@@ -27,15 +27,10 @@ body {
   width: 500px;
   margin: 0 auto 0;
 }
-.todo-app__task-input {
-  width: 56%;
-  display: inline-block;
-  flex-grow: 1
-}
 .todo-app__task-row {
   display: flex;
 }
-ul {
+.todo-app__task-list {
   margin:0;
   padding: 0px;
 }
@@ -43,10 +38,13 @@ ul {
 .todo-app__section-title {
   list-style:none;
 }
-input,button{
+.todo-app__task-input,
+.todo-app__add-button,
+.todo-app__action-button{
   outline:none;
 }
-button {
+.todo-app__add-button,
+.todo-app__action-button {
   background: none;
   border: 0px;
   color: #888;
@@ -55,7 +53,8 @@ button {
   font-family: lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.todo-app__add-button:hover,
+.todo-app__action-button:hover {
   color: #3a3a3a;
 }
 /* Heading */
@@ -69,7 +68,10 @@ button:hover {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.todo-app__task-input {
+  width: 56%;
+  display: inline-block;
+  flex-grow: 1;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -81,7 +83,7 @@ input[type="text"] {
   font-family: lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.todo-app__task-input:focus {
   color: #333;
 }
 
@@ -90,7 +92,7 @@ input[type="text"]:focus {
   display: block;
   margin: 0 0 20px;
 }
-input#new-task {
+.todo-app__task-input--new {
   width: 318px;
 }
 
@@ -108,7 +110,7 @@ input#new-task {
   vertical-align: middle;
 }
 
-.todo-app__task-item > input[type="checkbox"] {
+.todo-app__task-checkbox {
   margin: 0 10px;
 }
 .todo-app__task-title {
@@ -117,7 +119,7 @@ input#new-task {
   font-size: 18px;
   width: 226px;
 }
-.todo-app__task-item > input[type="text"].todo-app__task-input {
+.todo-app__task-item > .todo-app__task-input {
   width: 226px
 }
 .todo-app__action-icon {

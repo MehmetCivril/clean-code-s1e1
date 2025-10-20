@@ -5,7 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
-  <body>
+  <body class="page">
     <div class="info-banner">
       <img class="info-banner__image" src="./eisenhower-matrix.jpg">
       <a class="info-banner__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
@@ -14,14 +14,14 @@
       <p class="todo-app__add-section">
         <label class="todo-app__field-label" for="new-task">Add Item</label>
         <div class="todo-app__task-row">
-          <input id="new-task" class="todo-app__task-input" type="text">
+          <input id="new-task" class="todo-app__task-input todo-app__task-input--new" type="text">
           <button class="todo-app__add-button">Add</button>
         </div>
       </p>
       <h3 class="todo-app__section-title">Todo</h3>
       <ul id="incomplete-tasks" class="todo-app__task-list todo-app__task-list--incomplete">
         <li class="todo-app__task-item">
-          <input type="checkbox">
+          <input class="todo-app__task-checkbox" type="checkbox">
           <label class="todo-app__task-title">Pay Bills</label>
           <input type="text" class="todo-app__task-input">
           <button class="todo-app__action-button todo-app__action-button--edit">Edit</button>
@@ -30,7 +30,7 @@
           </button>
         </li>
         <li class="todo-app__task-item todo-app__task-item--editing">
-          <input type="checkbox">
+          <input class="todo-app__task-checkbox" type="checkbox">
           <label class="todo-app__task-title">Go Shopping</label>
           <input type="text" value="Go Shopping" class="todo-app__task-input">
           <button class="todo-app__action-button todo-app__action-button--edit">Save</button>
@@ -42,7 +42,7 @@
       <h3 class="todo-app__section-title">Completed</h3>
       <ul id="completed-tasks" class="todo-app__task-list todo-app__task-list--completed">
         <li class="todo-app__task-item">
-          <input type="checkbox" checked>
+          <input class="todo-app__task-checkbox" type="checkbox" checked>
           <label class="todo-app__task-title">See the Doctor</label>
           <input type="text" class="todo-app__task-input">
           <button class="todo-app__action-button todo-app__action-button--edit">Edit</button>
